@@ -4,79 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Voucher Permadani</title>
-    <style>
-        @page {
-            size: A4 landscape;
-            margin: 0;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Times New Roman', serif;
-            background: #fff;
-        }
-
-        .page {
-            width: 297mm;
-            height: 210mm;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10mm;
-            padding: 5mm;
-            box-sizing: border-box;
-            page-break-after: always;
-        }
-
-        .voucher {
-            width: 136mm;
-            height: 195mm;
-            border: 1px solid #000;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        table {
-            width: 100%;
-            height: 100%;
-            border-collapse: collapse;
-            font-size: 15pt;
-            table-layout: fixed;
-        }
-
-
-
-        th,
-        td {
-            border: 1px solid #000;
-            padding: 5px 6px;
-        }
-
-        th {
-            background-color: #ddd;
-            text-align: center;
-        }
-
-        td:nth-child(2),
-        td:nth-child(3),
-        th:nth-child(2),
-        th:nth-child(3) {
-            text-align: center;
-        }
-
-        .bold {
-            font-weight: bold;
-        }
-
-        .italic {
-            font-style: italic;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
@@ -109,7 +37,8 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th colspan="3">Selebrasi Formasi Pionir Permadani 2025 | | | H-{{ $k + 1 }}</th>
+                                    <th colspan="3">Selebrasi Formasi Pionir Permadani 2025 | | |
+                                        H-{{ $k + 1 }}</th>
                                 </tr>
                                 <tr>
                                     <th>Intruksi</th>
@@ -119,7 +48,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="background-color: antiquewhite">Formasi <span class="bold">Dimulai</span>
+                                    <td style="background-color: antiquewhite">Formasi <span
+                                            class="bold">Dimulai</span>
                                     </td>
                                     <td>{{ $f1[$k]->warna ?? '-' }}</td>
                                     <td><span class="bold">Kibas</span></td>
@@ -160,7 +90,7 @@
                                     <td>Warna</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: antiquewhite">Kami <span class="bold">Datang
+                                    <td style="background-color: rgb(233, 197, 150)">Kami <span class="bold">Datang
                                             Lagi</span></td>
                                     <td>Hitam</td>
                                     <td><span class="bold">Kibas</span></td>
@@ -188,7 +118,26 @@
         </div>
     @endfor
     @include('components.nav')
+    @include('components.jakarta')
+    <script>
+        // Efek fade-in saat halaman dimuat
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.classList.add('fade-in');
 
+            // Fade-out saat navigasi
+            const links = document.querySelectorAll('.nav a');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.body.classList.remove('fade-in');
+                    document.body.classList.add('fade-out');
+                    setTimeout(() => {
+                        window.location.href = this.href;
+                    }, 400);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
