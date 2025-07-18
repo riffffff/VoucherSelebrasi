@@ -37,8 +37,8 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th colspan="3">Selebrasi Formasi Pionir Permadani 2025 | | |
-                                        A-{{ $k + 1 }}</th>
+                                    <th colspan="2">Selebrasi Formasi Pionir Permadani 2025</th>
+                                    <th colspan="1">A-{{ $k + 1 }}</th>
                                 </tr>
                                 <tr>
                                     <th>Intruksi</th>
@@ -48,7 +48,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="background-color: antiquewhite">Formasi <span class="bold">Dimulai</span>
+                                    <td style="background-color: antiquewhite">Formasi <span
+                                            class="bold">Dimulai</span>
                                     </td>
                                     <td>{{ $f1[$k]->warna ?? '-' }}</td>
                                     <td><span class="bold">Kibas</span></td>

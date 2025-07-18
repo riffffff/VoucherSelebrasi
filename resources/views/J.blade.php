@@ -38,9 +38,8 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th colspan="3">Selebrasi Formasi Pionir Permadani 2025 | | |
-                                        J-{{ $k + 1 }}
-                                    </th>
+                                    <th colspan="2">Selebrasi Formasi Pionir Permadani 2025</th>
+                                    <th colspan="1">J-{{ $k + 1 }}</th>
                                 </tr>
                                 <tr>
                                     <th>Intruksi</th>
