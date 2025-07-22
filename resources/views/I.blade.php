@@ -90,18 +90,18 @@
                                     <td>Warna</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: rgb(233, 197, 150)">Kami <span class="bold">Datang
-                                            Lagi</span></td>
+                                    <td style="background-color: rgb(233, 197, 150)"><span class="bold">Ku Datang
+                                            </span></td>
                                     <td>Hitam</td>
                                     <td><span class="bold">Kibas</span></td>
                                 </tr>
                                 <tr>
-                                    <td>Come <span class="bold">On You Garasi</span></td>
+                                    <td>Come <span class="bold">On You Vokasi</span></td>
                                     <td>{{ $f8[$k]->warna ?? '-' }}</td>
                                     <td>Warna</td>
                                 </tr>
                                 <tr>
-                                    <td><span class="bold">Ku Datang</span></td>
+                                    <td>Kami <span class="bold">Datang Lagi</span></td>
                                     <td>{{ $f9[$k]->warna ?? '-' }}</td>
                                     <td>Warna</td>
                                 </tr>

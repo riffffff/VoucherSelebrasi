@@ -1,4 +1,4 @@
-<style>
+{{-- <style>
     html, body {
         margin: 0;
         padding: 0;
@@ -53,4 +53,4 @@
 <div class="bawang-wrapper no-print">
     <img src="{{ asset('images/bawang.png') }}" alt="Bawang" class="main">
     <img src="{{ asset('images/bawang-hover.png') }}" alt="Bawang Hover" class="hover-img">
-</div>
+</div> --}}
