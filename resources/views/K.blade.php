@@ -48,7 +48,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="background-color: rgb(233, 197, 150)">Formasi <span
+                                    <td style="background-color: antiquewhite">Formasi <span
                                             class="bold">Dimulai</span>
                                     </td>
                                     <td>{{ $f1[$k]->warna ?? '-' }}</td>
@@ -90,7 +90,7 @@
                                     <td>Warna</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: antiquewhite"><span class="bold">Ku Datang
+                                    <td style="background-color: rgb(233, 197, 150)" ><span class="bold">Ku Datang
                                             </span></td>
                                     <td>Hitam</td>
                                     <td><span class="bold">Kibas</span></td>
